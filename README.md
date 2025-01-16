@@ -17,18 +17,18 @@ go install github.com/4thel00z/zig-installer/...@latest
 
 ### Basic Installation
 ```bash
-sudo ./zig-installer
+sudo zig-installer
 ```
 This will grab the latest master version and install it to `/usr/local`.
 
 ### Install Specific Version
 ```bash
-sudo ./zig-installer --version=0.11.0
+sudo zig-installer --version=0.11.0
 ```
 
 ### Custom Installation Path
 ```bash
-sudo ./zig-installer \
+sudo zig-installer \
   --bin-dir=/opt/zig/bin \
   --lib-dir=/opt/zig/lib
 ```
@@ -38,7 +38,7 @@ sudo ./zig-installer \
 export ZIG_VERSION=0.11.0
 export ZIG_BIN_DIR=/opt/zig/bin
 export ZIG_LIB_DIR=/opt/zig/lib
-sudo ./zig-installer
+sudo zig-installer
 ```
 
 ## Configuration Options
@@ -75,13 +75,13 @@ sudo ./zig-installer
 ### Permission Errors
 ```bash
 # Run with sudo for system directories
-sudo ./zig-installer
+sudo zig-installer
 ```
 
 ### Custom Location Without Root
 ```bash
 # Install to user-owned directory
-./zig-installer --bin-dir=$HOME/.local/bin --lib-dir=$HOME/.local/lib
+zig-installer --bin-dir=$HOME/.local/bin --lib-dir=$HOME/.local/lib
 ```
 ## License
 
